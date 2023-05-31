@@ -4,10 +4,34 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/" />
+    <link rel="stylesheet" href="./css/main.css" />
     <title>Document</title>
   </head>
   <body>
+    <main class="main">
+      <h1>Dados y Apuestas</h1>
+      <h4>Introduce aquí tu jugada:</h4>
+      <section>
+        <select name="apuesta" id="apuesta">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+        </select>
+        <input
+          type="number"
+          name="apuesta"
+          value="apuesta"
+          placeholder="¿Cuánto apuestas?"
+        />
+      </section>
+      <h2>¡Vamos a Jugar!</h2>
+      <h2 class="hidden">¡Has ganado el doble de lo apostado!</h2>
+      <h2 class="hidden">¡Has perdido!</h2>
+      <p>Saldo: <span>50</span></p>
+    </main>
     <script src="./js/main.js"></script>
   </body>
 </html>
