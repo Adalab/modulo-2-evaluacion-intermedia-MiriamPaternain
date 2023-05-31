@@ -16,12 +16,14 @@ const playBtn = document.querySelector(".js_submit");
 const playText = document.querySelector(".js_ajugar");
 const winText = document.querySelector(".js_hasganado");
 const loseText = document.querySelector(".js_hasperdido");
-const money = document.querySelector(".js_money");
+let money = document.querySelector(".js_money");
 
 
 //Funciones:
 function balance(){
-
+const winBalance = betInput.value * 2;
+console.log(winBalance);
+return money.innerHTML = money + winBalance;
 }
 
 function compareNumbers(){
@@ -33,7 +35,7 @@ function compareNumbers(){
         playText.classList.add("hidden");
         winText.classList.remove("hidden");
         loseText.classList.add("hidden");
-        
+        balance();
     }else{
         playText.classList.add("hidden");
         winText.classList.add("hidden");
