@@ -20,6 +20,30 @@ const loseText = document.querySelector(".js_hasperdido");
 
 
 //Funciones:
+function compareNumbers(){
+    const randomNumber = getRandomNumber(6);
+    console.log(randomNumber);
+    const userNumber = parseInt(betInput.value);
+    console.log(userNumber);
+    if(userNumber === randomNumber){
+        playText.classList.add("hidden");
+        winText.classList.remove("hidden");
+        loseText.classList.add("hidden");
+    }else{
+        playText.classList.add("hidden");
+        winText.classList.add("hidden");
+        loseText.classList.remove("hidden");
+    }
+}
+
+function getRandomNumber(max) {
+return Math.ceil(Math.random() * max);
+
+}
+
+function handleClickBtn(event){
+    compareNumbers();
+}
 
 
 //Eventos:
