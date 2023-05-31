@@ -10,9 +10,17 @@
 'script'
 
 //Variables:
+const numberSelect = document.querySelector(".js_select");
+const betInput = document.querySelector(".js_betinput");
+const playBtn = document.querySelector(".js_submit");
+const playText = document.querySelector(".js_ajugar");
+const winText = document.querySelector(".js_hasganado");
+const loseText = document.querySelector(".js_hasperdido");
+
 
 
 //Funciones:
 
 
 //Eventos:
+playBtn.addEventListener('click', handleClickBtn);
